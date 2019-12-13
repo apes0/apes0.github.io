@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Muli|Raleway&display=swap');
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
