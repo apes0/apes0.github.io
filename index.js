@@ -1,3 +1,4 @@
+let t = document.getElementById("p");
 function loadDoc(file)
 {
     var rawFile = new XMLHttpRequest();
@@ -8,12 +9,10 @@ function loadDoc(file)
         {
             if(rawFile.status === 200 || rawFile.status == 0)
             {
-                let allText = rawFile.responseText;
-                let t = document.getElementById("p");
-                t.innerHTML += allText
+                allText = rawFile.responseText;
             }
         }
     }
     rawFile.send(null);
 }
-loadDoc('1.txt')
+alert(allText);
