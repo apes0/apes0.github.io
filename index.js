@@ -1,5 +1,5 @@
 let t = document.getElementById("p");
-let allText;
+let allText = '';
 function loadDoc(file)
 {
     var rawFile = new XMLHttpRequest();
