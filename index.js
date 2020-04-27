@@ -4,4 +4,4 @@ async function read(f) {
   return data;
 }
 
-console.log(read('/1.txt'))
+console.log(read('1.txt'))
