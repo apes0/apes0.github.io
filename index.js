@@ -1,5 +1,11 @@
 let t = document.getElementById("p");
-var allText;
+
+function writeDoc(n){
+    for(let i = 0; i < n; i++){
+        loadDoc(i.stringify + '.txt')
+    }
+}
+
 function loadDoc(file)
 {
     var rawFile = new XMLHttpRequest();
@@ -11,9 +17,13 @@ function loadDoc(file)
             if(rawFile.status === 200 || rawFile.status == 0)
             {
                 allText = rawFile.responseText;
+                if(file === 'pn.txt'){
+                    writeDoc(parseInt(allText, 10))
+                } else {
+                    t.innerHTML += allText
+                }
             }
         }
     }
     rawFile.send(null);
 }
-alert(allText);
