@@ -1,7 +1,9 @@
+t = document.getElementById('p')
+
 async function read(f) {
   const res = await fetch(f);
   let data = await res.json();
-  return data;
+  t.innerHTML += data;
 }
 
-console.log(read('1.txt'))
+read('pn.txt')
