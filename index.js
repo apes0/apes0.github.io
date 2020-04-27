@@ -1,24 +1,19 @@
 t = document.getElementById('p')
 
-async function read(f) {
-  const res = await fetch(f);
-  let data = await res.json();
-  try {
-    return data;
-  } catch (err) {
-    return 1
+function lp(n){
+  for(let i = 0; i < n; i ++){
+    read((i + 1).toString(10) + '.txt')
   }
 }
 
-for(let i = 1; i < 10; i ++){
-  try {
-    p = read(i.toString(10) + '.txt')
-    if(p === 1) {
-      throw('error')
-    }
-    t.innerHTML += p + '<br>'
-  } catch(err) {
-    alert('error')
-    break
+async function read(f) {
+  const res = await fetch(f);
+  let data = await res.json();
+  if(f === 'pn.txt'){
+    lp(parseInt(data, 10))
+  } else {
+    t.innerHTML = data + '<br> + t.innerHTML;
   }
 }
+
+read('pn.txt')
