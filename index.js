@@ -1,8 +1,6 @@
 async function read(f){
-  await fetch(f)
-  .then((response) => {
-    return response;
-  })
+  let r = await fetch(f)
+  return r;
 }
 
 console.log(read('/1.txt'))
