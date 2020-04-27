@@ -8,11 +8,12 @@ function loadDoc(file)
         {
             if(rawFile.status === 200 || rawFile.status == 0)
             {
-                var allText = rawFile.responseText;
+                let allText = rawFile.responseText;
+                let t = document.getElementById("p");
+                t.innerHTML += allText
             }
         }
     }
     rawFile.send(null);
-    return allText;
 }
-alert(loadDoc('1.txt'))
+loadDoc('1.txt')
