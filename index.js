@@ -6,9 +6,9 @@ function writeDoc(n){
     }
 }
 
-function loadDoc(file)
-{
-    var rawFile = new XMLHttpRequest();
+var rawFile = new XMLHttpRequest();
+
+function loadDoc(file){
     rawFile.open("GET", file, false);
     rawFile.onreadystatechange = function ()
     {
