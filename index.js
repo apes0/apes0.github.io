@@ -1,2 +1,2 @@
-d = await fetch('/1.txt')
+let d = await fetch('/1.txt')
 console.log(d)
