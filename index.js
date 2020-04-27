@@ -1,2 +1,8 @@
-let d = await fetch('/1.txt')
-console.log(d)
+function read(f){
+  await fetch(f)
+  .then((response) => {
+    return response.json();
+  })
+}
+
+alert(read('/1.txt'))
