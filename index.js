@@ -27,3 +27,5 @@ function loadDoc(file)
     }
     rawFile.send(null);
 }
+
+loadDoc('pn.txt')
