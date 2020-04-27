@@ -12,7 +12,7 @@ async function read(f) {
   if(f === 'pn.txt'){
     lp(parseInt(data, 10))
   } else {
-    t.innerHTML = data + '<br> + t.innerHTML;
+    t.innerHTML = data + '<br>' + t.innerHTML;
   }
 }
 
