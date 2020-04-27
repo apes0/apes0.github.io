@@ -1,4 +1,4 @@
-fetch('/1.txt')
+await fetch('/1.txt')
   .then((r) => {
     alert(r.stringify);
   })
