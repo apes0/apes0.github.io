@@ -2,7 +2,7 @@ t = document.getElementById('p')
 
 function lp(n){
   for(let i = 0; i < n; i ++){
-    read(i.stringify() + '.txt')
+    read(i.toString(10) + '.txt')
   }
 }
 
@@ -11,6 +11,8 @@ async function read(f) {
   let data = await res.json();
   if(f === 'pn.txt'){
     lp(parseInt(data, 10))
+  } else {
+    t.innerHTML += data;
   }
 }
 
