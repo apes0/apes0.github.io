@@ -1,11 +1,18 @@
-function loadDoc(d) {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        return this.responseText;
+function loadDoc(file)
+{
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+                alert(allText);
+            }
         }
-    };
-    xhttp.open("GET", d, true);
-    xhttp.send();
+    }
+    rawFile.send(null);
 }
 alert(loadDoc('1.txt'))
