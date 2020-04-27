@@ -1,8 +1,7 @@
 let t = document.getElementById("p");
-let allText;
+var allText;
 function loadDoc(file)
 {
-    allText = ''
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", file, false);
     rawFile.onreadystatechange = function ()
