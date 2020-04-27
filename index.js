@@ -1,4 +1,4 @@
-fetch('http://example.com/movies.json')
+fetch('/1.txt')
   .then((r) => {
     alert(r.stringify);
   })
