@@ -1,4 +1,4 @@
-function read(f){
+async function read(f){
   await fetch(f)
   .then((response) => {
     return response.json();
