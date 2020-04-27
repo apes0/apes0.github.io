@@ -1,4 +1,2 @@
-await fetch('/1.txt')
-  .then((r) => {
-    alert(r.stringify);
-  })
+d = await fetch('/1.txt')
+console.log(d)
