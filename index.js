@@ -1,12 +1,11 @@
-function loadDoc() {
+function loadDoc(d) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("demo").innerHTML =
-        this.responseText;
+        return this.responseText;
         }
     };
-    xhttp.open("GET", "1.txt", true);
+    xhttp.open("GET", d, true);
     xhttp.send();
 }
-alert(loadDoc())
+alert(loadDoc('1.txt'))
