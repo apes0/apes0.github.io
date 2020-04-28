@@ -20,7 +20,4 @@ async function read(f) {
 
 read('pn.txt');
 
-for(var key in p) {
-  var v = p[key]
-  t.innerHTML += v;
-}
+alert(p)
