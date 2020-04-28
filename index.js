@@ -1,8 +1,8 @@
-t = document.getElementById('p')
+t = document.getElementById('p');
 
 function lp(n){
-  for(let i = 0; i < n; i ++){
-    read((i + 1).toString(10) + '.txt')
+  for(let i = n; i > 0; i --){
+    read((i + 1).toString(10) + '.txt');
   }
 }
 
@@ -10,10 +10,10 @@ async function read(f) {
   const res = await fetch(f);
   let data = await res.json();
   if(f === 'pn.txt'){
-    lp(parseInt(data, 10))
+    lp(parseInt(data, 10));
   } else {
-    t.innerHTML = data + '<br>' + t.innerHTML;
+    t.innerHTML += data + '<br>';
   }
 }
 
-read('pn.txt')
+read('pn.txt');
