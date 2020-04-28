@@ -1,6 +1,6 @@
 t = document.getElementById('p');
 
-p = {}
+p = {};
 
 l = 1;
 
@@ -14,24 +14,22 @@ async function read(f) {
   const res = await fetch(f);
   let data = await res.json();
   if(f === 'pn.txt'){
-    l = parseInt(data,10)
-    alert(l)
+    l = parseInt(data,10);
     lp(l);
   } else {
-    alert(data)
     p[f.replace('.txt', '')] = data;
   }
 }
 
 read('pn.txt');
-render()
+render();
 
 function render(){
   if( l == Object.keys(p).length){
     for(let i = l; i > 0; i --){
-      t.innerHTML += p[i]
+      t.innerHTML += p[i] + '<br>';
     }
   } else {
-    setTimeout(render, 10)
+    setTimeout(render, 10);
   }
 }
