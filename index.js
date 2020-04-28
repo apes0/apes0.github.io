@@ -1,4 +1,4 @@
-t = document.body;
+t = document.getElementById('p');
 
 async function lp(n){
   for(let i = n; i > 0; i --){
