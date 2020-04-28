@@ -13,7 +13,7 @@ async function read(f) {
     l = parseInt(data,10);
     lp(l);
   } else {
-    t.innerHTML += data
+    t.innerHTML += data + '<br>';
   }
 }
 
