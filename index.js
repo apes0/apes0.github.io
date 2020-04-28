@@ -27,7 +27,7 @@ read('pn.txt');
 render()
 
 function render(){
-  if( l == Object.keys(obj).length){
+  if( l == Object.keys(p).length){
     for(let i = l; i > 0; i --){
       t.innerHTML += p[i]
     }
