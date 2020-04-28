@@ -6,14 +6,21 @@ function lp(n){
   }
 }
 
+p = {}
+
 async function read(f) {
   const res = await fetch(f);
   let data = await res.json();
   if(f === 'pn.txt'){
     lp(parseInt(data, 10));
   } else {
-    t.innerHTML += data + '<br>';
+    p[f.replace(/.txt/, '')] = data;
   }
 }
 
 read('pn.txt');
+
+for(i in d) {
+  i ++;
+  t.innerHTML += i;
+}
