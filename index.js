@@ -19,4 +19,4 @@ async function read(f) {
 }
 
 read('pn.txt');
-consloe.log(p)
+console.log(p)
