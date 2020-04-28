@@ -19,5 +19,4 @@ async function read(f) {
 }
 
 read('pn.txt');
-
-alert(p['1'])
+comsloe.log(p)
