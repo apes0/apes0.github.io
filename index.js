@@ -2,7 +2,7 @@ t = document.getElementById('p');
 
 p = {}
 
-l = 0;
+l = 1;
 
 function lp(n){
   for(let i = n; i > 0; i --){
