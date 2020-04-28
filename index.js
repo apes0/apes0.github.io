@@ -24,4 +24,14 @@ async function read(f) {
 }
 
 read('pn.txt');
-alert(l)
+render()
+
+function render(){
+  if( l == Object.keys(obj).length){
+    for(let i = l; i > 0; i --){
+      t.innerHTML += p[i]
+    }
+  } else {
+    setTimeout(render, 10)
+  }
+}
