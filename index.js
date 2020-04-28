@@ -5,11 +5,11 @@ p = {}
 function lp(n){
   for(let i = n; i > 0; i --){
     read(i.toString(10) + '.txt');
-    var l = Object.keys(p).length;
-    alert(l)
-    for(let i = 0; i < l; i ++){
-      t.innerHTML += p[(i + 1).stringify()];
-    }
+  }
+  var l = Object.keys(p).length;
+  alert(l)
+  for(let i = 0; i < l; i ++){
+    t.innerHTML += p[(i + 1).stringify()];
   }
 }
 
