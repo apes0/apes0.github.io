@@ -2,7 +2,7 @@ t = document.getElementById('p');
 
 function lp(n){
   for(let i = n; i > 0; i --){
-    read((i + 1).toString(10) + '.txt');
+    read(i.toString(10) + '.txt');
   }
 }
 
