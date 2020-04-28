@@ -20,7 +20,7 @@ async function read(f) {
 
 read('pn.txt');
 
-l = Object.keys(p).length;
+var l = Object.keys(p).length;
 for(let i = 0; i < l; i ++){
-  t.innerHTML += p[(i + 1).stringify()]
+  t.innerHTML += p[(i + 1).stringify()];
 }
