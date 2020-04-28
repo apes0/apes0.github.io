@@ -20,7 +20,7 @@ async function read(f) {
 
 read('pn.txt');
 
-for(i in d) {
-  i ++;
-  t.innerHTML += i;
+for(var key in p) {
+  var v = p[key]
+  t.innerHTML += v;
 }
