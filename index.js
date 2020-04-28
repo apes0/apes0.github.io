@@ -15,6 +15,7 @@ async function read(f) {
   if(f === 'pn.txt'){
     lp(parseInt(data, 10));
   } else {
+    alert(data)
     p[f.replace('.txt', '')] = data;
   }
 }
