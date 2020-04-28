@@ -1,8 +1,10 @@
 t = document.getElementById('p');
+var l = 0;
 
 function lp(n){
   for(let i = n; i > 0; i --){
     read(i.toString(10) + '.txt');
+    l = Object.keys(p).length;
   }
 }
 
@@ -20,7 +22,6 @@ async function read(f) {
 
 read('pn.txt');
 
-var l = Object.keys(p).length;
 for(let i = 0; i < l; i ++){
   t.innerHTML += p[(i + 1).stringify()];
 }
