@@ -6,6 +6,7 @@ function lp(n){
   for(let i = n; i > 0; i --){
     read(i.toString(10) + '.txt');
     t.innerHTML += p[i];
+    alert(i)
   }
 }
 
