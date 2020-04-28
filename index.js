@@ -14,10 +14,10 @@ async function read(f) {
   if(f === 'pn.txt'){
     lp(parseInt(data, 10));
   } else {
-    p[f.replace(/.txt/, '')] = data;
+    p[f.replace('.txt', '')] = data;
   }
 }
 
 read('pn.txt');
 
-alert(p['1'].stringify())
+alert(p.1)
