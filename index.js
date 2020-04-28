@@ -20,4 +20,4 @@ async function read(f) {
 
 read('pn.txt');
 
-alert(p)
+alert(p['1'].stringify())
