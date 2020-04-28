@@ -1,1 +1,1 @@
-"does HTML work in here? If <b>this</b> word is bold, then it does, else it doesn't."
+"<title>Csn i use HTML with this tool?</title><p>Yes you can. Here is a little <button>button</button>.</p>"
