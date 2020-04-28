@@ -19,4 +19,8 @@ async function read(f) {
 }
 
 read('pn.txt');
-console.log(p)
+
+l = Object.keys(p).length;
+for(let i = 0; i < l; i ++){
+  t.innerHTML += p[(i + 1).stringify()]
+}
