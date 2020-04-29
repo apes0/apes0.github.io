@@ -13,7 +13,7 @@ async function lp(){
 async function read(f) {
   const res = await fetch(f);
   let data = await res.json();
-  t.innerHTML = data + '<br> + t.innerHTML';
+  t.innerHTML = data + '<br>'+ t.innerHTML;
 }
 
 lp()
