@@ -14,5 +14,4 @@ async function read(f) {
   } catch {
     return;
   }
-  }
 }
