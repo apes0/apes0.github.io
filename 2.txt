@@ -1,1 +1,1 @@
-"<h> Heading 2</h><p> Paragraph </p>"
+"<h1> Heading 2</h1><p> Paragraph </p>"
