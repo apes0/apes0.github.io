@@ -1,9 +1,11 @@
 t = document.body;
 
 async function lp(){
-  for(let i = 1; i > 0; i ++){
+  let i = 1;
+  while(true) {
     try {
       await read(i.toString(10) + '.txt');
+      i ++;
     } catch {
       break;
     }
