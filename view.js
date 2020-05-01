@@ -1,4 +1,5 @@
 f = window.location.href.replace(window.location.hostname + '/view?', '');
+f.replace('/', '');
 
 async function gf(f) {
   const res = await fetch(f);
