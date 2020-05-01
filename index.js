@@ -1,6 +1,6 @@
 t = document.body;
 
-async function lp(){
+async function lp() {
   let i = 1;
   while(true) {
     try {
@@ -19,3 +19,7 @@ async function read(f) {
 }
 
 lp()
+
+function view(p) {
+  window.location.href = window.location.hostname + '/view' + '?' + p;
+}
