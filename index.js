@@ -1,5 +1,7 @@
 t = document.body;
 
+mchr = 100;
+
 async function lp() {
   let i = 1;
   while(true) {
@@ -15,6 +17,9 @@ async function lp() {
 async function read(f) {
   const res = await fetch(f);
   let data = await res.json();
+  if(data.length > mchr) {
+    data = data.slice(0, mchr) + '...';
+  }
   t.innerHTML = data + '<br>'+ t.innerHTML;
 }
 
