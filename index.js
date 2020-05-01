@@ -19,7 +19,7 @@ async function read(f) {
   let data = await res.json();
   if(data.length > mchr) {
     data = data.slice(0, mchr) + '...';
-    data += '<button onClick = "view( f )">read more</button>'.replace(' f ','"' + f + '"');
+    data += '<button onClick = "view( f )">read more</button>'.replace(' f ', "'" + f + "'");
   }
   t.innerHTML = data + '<br>'+ t.innerHTML;
 }
