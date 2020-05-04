@@ -6,7 +6,7 @@ async function lp() {
   let i = 1;
   while(true) {
     try {
-      await read(i.toString(10) + '.txt');
+      await read(i.toString(10) + '.json');
       i ++;
     } catch {
       break;
