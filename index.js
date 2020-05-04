@@ -22,7 +22,7 @@ async function read(f) {
   if(p.length > mchr){
     p = p.slice(0, mchr) + '...<button onClick = "view( f )">View more</button>'.replace(' f ', "'" + f + "'");
   }
-  let pg = '<h1>' + t + '</h1><p>' + p + '</p>';
+  let pg = '<h1>' + ttl + '</h1><p>' + p + '</p>';
   t.innerHTML = pg + '<br>' + t.innerHTML;
 }
 
