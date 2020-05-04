@@ -1,6 +1,6 @@
-t = document.body;
+let t = document.body;
 
-mchr = 100;
+let mchr = 100;
 
 async function lp() {
   let i = 1;
@@ -19,9 +19,9 @@ async function read(f) {
   let data = await res.json();
   let t = data.title;
   let p = data.text;
-//  if(p.length > mchr){
-//    p = p.slice(0, mchr) + '...<button onClick = "view( f )">View more</button>'.replace(' f ', "'" + f + "'");
-//  }
+  if(p.length > mchr){
+    p = p.slice(0, mchr) + '...<button onClick = "view( f )">View more</button>'.replace(' f ', "'" + f + "'");
+  }
   let pg = '<h1>' + t + '</h1><p>' + p + '</p>';
   alert(typeof pg)
   t.innerHTML = pg + '<br>' + t.innerHTML;
