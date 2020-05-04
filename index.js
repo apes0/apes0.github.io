@@ -24,9 +24,10 @@ async function read(f) {
   }
   let pg = '<h1>' + t + '</h1><p>' + p + '</p>';
   t.innerHTML = pg + '<br>' + t.innerHTML;
+  
 }
 
-await lp()
+lp()
 
 function view(p) {
   window.location.href = window.location.hostname + '/view' + '?' + p;
