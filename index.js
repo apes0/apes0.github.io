@@ -20,10 +20,13 @@ async function read(f) {
   console.log(data);
   let t = data.title;
   let p = data.text;
+  console.log(t);
+  console.log(p);
   if(p.length > mchr){
     p = p.slice(0, mchr) + '...<button onClick = "view( f )">View more</button>'.replace(' f ', "'" + f + "'");
   }
   let pg = '<h1>' + t + '</h1><p>' + p + '</p>';
+  console.log(pg);
   t.innerHTML = pg + '<br>' + t.innerHTML;
 }
 
