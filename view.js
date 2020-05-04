@@ -6,7 +6,7 @@ async function gf(f) {
   let ttl = data.title;
   let p = data.text;
   let pg = '<h1>' + ttl + '</h1><p>' + p + '</p>';
-  document.body.innerHTML += data;
+  document.body.innerHTML += pg;
 }
 
 gf(f)
