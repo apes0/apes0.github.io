@@ -23,12 +23,11 @@ async function read(f) {
     p = p.slice(0, mchr) + '...<button onClick = "view( f )">View more</button>'.replace(' f ', "'" + f + "'");
   }
   let pg = '<h1>' + t + '</h1><p>' + p + '</p>';
-  pg = pg.stringify;
   t.innerHTML = pg + '<br>' + t.innerHTML;
 }
+
+lp()
 
 function view(p) {
   window.location.href = window.location.hostname + '/view' + '?' + p;
 }
-
-lp()
