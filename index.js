@@ -17,6 +17,7 @@ async function lp() {
 async function read(f) {
   const res = await fetch(f);
   let data = await res.json();
+  console.log(data)
   let t = data['title']
   let p = data['text']
   if(p.length > mchr){
