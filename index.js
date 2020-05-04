@@ -3,10 +3,12 @@ t = document.body;
 mchr = 100;
 
 async function lp() {
-  let i = 1;
+  let i = 1, n = '';
   while(true) {
     try {
-      await read(i.toString(10) + '.json');
+      n = n.concat(i)
+      console.log(n)
+      await read(n + '.json');
       i ++;
     } catch {
       break;
