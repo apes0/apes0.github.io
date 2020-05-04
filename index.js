@@ -3,12 +3,10 @@ t = document.body;
 mchr = 100;
 
 async function lp() {
-  let i = 1, n = '';
+  let i = 1;
   while(true) {
     try {
-      n = n.concat(i)
-      console.log(n)
-      await read(n + '.json');
+      await read(i.toString(10) + '.json');
       i ++;
     } catch {
       break;
@@ -25,6 +23,7 @@ async function read(f) {
     p = p.slice(0, mchr) + '...<button onClick = "view( f )">View more</button>'.replace(' f ', "'" + f + "'");
   }
   let pg = '<h1>' + t + '</h1><p>' + p + '</p>';
+  alert(pg)
   t.innerHTML = pg + '<br>' + t.innerHTML;
 }
 
