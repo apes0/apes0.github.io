@@ -26,7 +26,7 @@ async function read(f) {
   t.innerHTML = pg + '<br>' + t.innerHTML;
 }
 
-lp()
+await lp()
 
 function view(p) {
   window.location.href = window.location.hostname + '/view' + '?' + p;
