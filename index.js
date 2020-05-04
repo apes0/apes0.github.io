@@ -17,14 +17,14 @@ async function lp() {
 async function read(f) {
   const res = await fetch(f);
   let data = await res.json();
-  console.log(data)
-  let t = data['title']
-  let p = data['text']
+  console.log(data);
+  let t = data.title;
+  let p = data.text;
   if(p.length > mchr){
-    p = p.slice(0, mchr) + '...<button onClick = "view( f )">View more</button>'.replace(' f ', "'" + f + "'")
+    p = p.slice(0, mchr) + '...<button onClick = "view( f )">View more</button>'.replace(' f ', "'" + f + "'");
   }
-  let pg = '<h1>' + t + '</h1><p>' + p + '</p>'
-  t.innerHTML = pg + '<br>'+ t.innerHTML;
+  let pg = '<h1>' + t + '</h1><p>' + p + '</p>';
+  t.innerHTML = pg + '<br>' + t.innerHTML;
 }
 
 function view(p) {
