@@ -20,7 +20,7 @@ async function read(f) {
   let ttl = data.title;
   let p = data.text;
   if(p.length > mchr){
-    p = p.slice(0, mchr) + '...<button onClick = "view( f )">View more</button>'.replace(' f ', "'" + f + "'");
+    p = p.slice(0, mchr) + '...<button onClick = "view( f )" class = "button">View more</button>'.replace(' f ', "'" + f + "'");
   }
   let pg = '<h1>' + ttl + '</h1><p>' + p + '</p>';
   t.innerHTML = pg + '<br>' + t.innerHTML;

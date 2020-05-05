@@ -10,3 +10,10 @@ h1{
 p{
     font-size: 20px;
 }
+.button{
+    font-size: 16px;
+    background-color: #2C2F33;
+    color: white;
+    border: none;
+    outline:none;
+}
