@@ -29,5 +29,5 @@ async function read(f) {
 lp();
 
 function view(p) {
-  window.location.hostname = window.location.hostname + '/view' + '?' + p;
+  window.location.assign(window.location.hostname + '/view' + '?' + p);
 }
