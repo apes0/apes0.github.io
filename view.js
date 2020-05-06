@@ -1,4 +1,5 @@
-let f = window.location.href.replace('https://' + window.location.hostname + '/view?', '');
+let f = window.location.href.replace('https://' + window.location.hostname + '/', '');
+f.replace('view?', '')
 
 async function gf(f) {
   const res = await fetch(f);
