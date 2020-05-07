@@ -1,5 +1,5 @@
 let f = window.location.href.replace('https://' + window.location.hostname + '/', '');
-f.replace('view?', '')
+f = f.replace('view?', '')
 
 async function gf(f) {
   const res = await fetch(f);
