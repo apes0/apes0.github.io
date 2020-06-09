@@ -3,5 +3,9 @@
 </head>
 <script>
   let dat = window.location.href.replace('https://' + window.location.hostname + '/', '');
-  alert(dat)
- </script>
+  dat = dat.replace('pbip.html?', '')
+  dat = dat.jsonify()
+  for( let i = 0; i < len(dat); i ++){
+    String.fromCharCode(dat[i])
+  }
+</script>
