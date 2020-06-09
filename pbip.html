@@ -4,6 +4,7 @@
   let dat = window.location.href.replace('https://' + window.location.hostname + '/', '');
   dat = dat.replace('pbip.html?', '')
   dat = JSON.parse(dat)
+  dat = dat.replaceAll('%20', '')
   pkm = ''
   for( let i = 0; i < dat.length; i ++){
     pkm += String.fromCharCode(parseInt(dat[i]))
