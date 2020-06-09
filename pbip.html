@@ -4,7 +4,7 @@
 <script>
   let dat = window.location.href.replace('https://' + window.location.hostname + '/', '');
   dat = dat.replace('pbip.html?', '')
-  dat = json.parse(dat)
+  dat = JSON.parse(dat)
   for( let i = 0; i < len(dat); i ++){
     String.fromCharCode(parseInt(dat[i]))
   }
